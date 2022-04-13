@@ -2,10 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager intance;
+
+    public AudioSource bgm, levelEndMusic; 
 
     public AudioSource[] soundEffects;
 
@@ -16,6 +19,10 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySFX(int soundToPlay)
     {
+        soundEffects[soundToPlay].Stop();
+
+        soundEffects[soundToPlay].pitch = Random.Range((float) .9,1.1f);
+        
         soundEffects[soundToPlay].Play();
     }
 }
