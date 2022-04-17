@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PostMenu : MonoBehaviour
+public class PauseMenu : MonoBehaviour
 {
+
+    public static PauseMenu intance;
     public GameObject pauseScreen;
     public bool isPaused;
     public string levelSelect, mainMenu;
     
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        intance = this;
     }
 
     // Update is called once per frame
@@ -43,10 +44,12 @@ public class PostMenu : MonoBehaviour
     public void LevelSelect()
     {
         SceneManager.LoadScene(levelSelect);
+        Time.timeScale = 1f;
     }
     
     public void MainMenu()
     {
         SceneManager.LoadScene(mainMenu);
+        Time.timeScale = 1f;
     }
 }
