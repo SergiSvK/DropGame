@@ -29,7 +29,7 @@ public class Hurtbox : MonoBehaviour
             }
             
             // Enemy Explode.mp3 = 1 position
-            AudioManager.intance.PlaySFX(1);
+            AudioManager.intance.PlaySfx(1);
         }
     }
 }

@@ -17,7 +17,7 @@ public class AudioManager : MonoBehaviour
         intance = this;
     }
 
-    public void PlaySFX(int soundToPlay)
+    public void PlaySfx(int soundToPlay)
     {
         soundEffects[soundToPlay].Stop();
 

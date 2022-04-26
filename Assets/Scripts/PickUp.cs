@@ -26,7 +26,7 @@ public class PickUp : MonoBehaviour
                 
                 isCollected = true;
                 
-                AudioManager.intance.PlaySFX(9);
+                AudioManager.intance.PlaySfx(9);
                 Destroy(gameObject);
             }
 
@@ -36,7 +36,7 @@ public class PickUp : MonoBehaviour
                 PlayerHealthController.instance.HealPlayer();
 
                 isCollected = true;
-                AudioManager.intance.PlaySFX(7);
+                AudioManager.intance.PlaySfx(7);
                 Destroy(gameObject);
             }
             
