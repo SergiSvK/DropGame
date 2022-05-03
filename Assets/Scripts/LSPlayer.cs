@@ -7,7 +7,11 @@ public class LSPlayer : MonoBehaviour
 
     public MapPoint currentPoint;
 
+    public LSManager lsManager;
+
     public float moveSpeed = 10f;
+
+    public bool levelLoading;
     
     void Update()
     {
@@ -48,6 +52,16 @@ public class LSPlayer : MonoBehaviour
                     SetNextPoint(currentPoint.down);
                 }
             }
+
+            if (currentPoint.isLevel && currentPoint.levelToLoad !="" && !currentPoint.isLock)
+            {
+                if (Input.GetButtonDown("Jump"))
+                {
+                    levelLoading = true;
+                    lsManager.LoadLevel();
+                }
+            }
+            
         }
 
     }
