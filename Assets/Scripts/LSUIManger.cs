@@ -26,7 +26,7 @@ public class LSUIManger : MonoBehaviour
     {
         if (_shouldFadeToBlack)
         {
-            // Mathf.MoveTowards Nos permite movernos lentamente de un numero a otro
+            
             fadeScreen.color = new Color(fadeScreen.color.r,fadeScreen.color.g,fadeScreen.color.b,Mathf
                 .MoveTowards(fadeScreen.color.a, 1f,fadeSpeed * Time.deltaTime));
 

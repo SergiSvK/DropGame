@@ -53,6 +53,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\MovingPlatform.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\LevelExit.cs" />
      <Compile Include="Assets\Scripts\PlayerHealthController.cs" />
@@ -61,11 +62,13 @@
      <Compile Include="Assets\Scripts\DestroyOverTime.cs" />
      <Compile Include="Assets\Scripts\LSPlayer.cs" />
      <Compile Include="Assets\Scripts\DamagePlayer.cs" />
+     <Compile Include="Assets\Scripts\FlyEnemyController.cs" />
      <Compile Include="Assets\Scripts\MapPoint.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\UIController.cs" />
      <Compile Include="Assets\Scripts\KillZone.cs" />
      <Compile Include="Assets\Scripts\LSManager.cs" />
+     <Compile Include="Assets\Scripts\Switch.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\CheckPointController.cs" />
      <Compile Include="Assets\Scripts\PickUp.cs" />
@@ -73,6 +76,7 @@
      <Compile Include="Assets\Scripts\LSCamara.cs" />
      <Compile Include="Assets\Scripts\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Checkpoint.cs" />
+     <Compile Include="Assets\Scripts\Bouncer.cs" />
      <Compile Include="Assets\Scripts\LSUIManger.cs" />
      <None Include="Assets\2D Platformer Assets\Graphics\Credits.txt" />
  <Reference Include="UnityEngine">
