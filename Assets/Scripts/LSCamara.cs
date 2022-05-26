@@ -9,19 +9,15 @@ public class LSCamara : MonoBehaviour
 
     public Transform target;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-    
     void Update()
     {
-        var xPos = Mathf.Clamp(target.position.x, minPos.x, maxPos.x);
+        var position = target.position;
+        var xPos = Mathf.Clamp(position.x, minPos.x, maxPos.x);
         
-        var yPos = Mathf.Clamp(target.position.y, minPos.y, maxPos.y);
+        var yPos = Mathf.Clamp(position.y, minPos.y, maxPos.y);
 
-        transform.position = new Vector3(xPos, yPos, transform.position.z);
+        var transform1 = transform;
+        transform1.position = new Vector3(xPos, yPos, transform1.position.z);
 
     }
 }

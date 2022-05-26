@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Switch : MonoBehaviour
@@ -11,11 +8,10 @@ public class Switch : MonoBehaviour
     private SpriteRenderer theSR;
     public Sprite downSprite;
 
-    private bool hasSwitched;
+    private bool _hasSwitched;
 
     public bool deactivateOnSwitch;
     
-    // Start is called before the first frame update
     void Start()
     {
         theSR = GetComponent<SpriteRenderer>();
@@ -23,20 +19,19 @@ public class Switch : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player") && !hasSwitched)
+        if (!other.CompareTag("Player") || _hasSwitched) return;
+        if(deactivateOnSwitch)
         {
-            if(deactivateOnSwitch)
-            {
-                objectToSwitch.SetActive(false);
-            } else
-            {
-                objectToSwitch.SetActive(true);
-            }
-
-            theSR.sprite = downSprite;
-            hasSwitched = true;
+            objectToSwitch.SetActive(false);
+            AudioManager.intance.PlaySfx(13);
+        } else
+        {
+            objectToSwitch.SetActive(true);
         }
 
-        
+        theSR.sprite = downSprite;
+        _hasSwitched = true;
+
+
     }
 }

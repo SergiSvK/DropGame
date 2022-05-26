@@ -383,7 +383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aacab46d501cff45ad65f7ed10c030b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startScene: test2
+  startScene: LevelSelect
 --- !u!114 &1508400288
 MonoBehaviour:
   m_ObjectHideFlags: 0

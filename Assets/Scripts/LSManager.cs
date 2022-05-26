@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class LSManager : MonoBehaviour
 {
-
     public LSPlayer player;
 
     public void LoadLevel()
@@ -15,9 +14,9 @@ public class LSManager : MonoBehaviour
 
     private IEnumerator LoadLevelCo()
     {
+        LSUIManger.instance.FadeToBlack();
         
-        LSUIManger.intance.FadeFromBlack();
-        yield return new WaitForSeconds(((1f)/ LSUIManger.intance.fadeSpeed) + .25f);
+        yield return new WaitForSeconds((1f / LSUIManger.instance.fadeSpeed) + 0.25f);
 
         SceneManager.LoadScene(player.currentPoint.levelToLoad);
     }
