@@ -8,8 +8,6 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager intance;
 
-    public AudioSource bgm, levelEndMusic; 
-
     public AudioSource[] soundEffects;
 
     private void Awake()
