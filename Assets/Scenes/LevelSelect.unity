@@ -354,6 +354,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 845848835}
     - target: {fileID: 22241879055463073, guid: aa5cb5a0906c2b14683756218ada1441, type: 3}
+      propertyPath: isLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22241879055463073, guid: aa5cb5a0906c2b14683756218ada1441, type: 3}
+      propertyPath: isLocked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22241879055463073, guid: aa5cb5a0906c2b14683756218ada1441, type: 3}
       propertyPath: levelToLoad
       value: none
       objectReference: {fileID: 0}
@@ -837,6 +845,10 @@ PrefabInstance:
     - target: {fileID: 22241879055463073, guid: aa5cb5a0906c2b14683756218ada1441, type: 3}
       propertyPath: isLevel
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22241879055463073, guid: aa5cb5a0906c2b14683756218ada1441, type: 3}
+      propertyPath: isLocked
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22241879055463073, guid: aa5cb5a0906c2b14683756218ada1441, type: 3}
       propertyPath: levelToLoad
@@ -6247,7 +6259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1052369307
 MonoBehaviour:
   m_ObjectHideFlags: 0

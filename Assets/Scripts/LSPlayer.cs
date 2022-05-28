@@ -50,13 +50,11 @@ public class LSPlayer : MonoBehaviour
                 }
             }
 
-            if (currentPoint.isLevel)
+            if (currentPoint.isLevel && currentPoint.levelToLoad !="")
             {
-                if (Input.GetButtonDown("Jump"))
-                {
-                    levelLoading = true;
-                    manager.LoadLevel();
-                }
+                if (!Input.GetButtonDown("Jump")) return;
+                levelLoading = true;
+                manager.LoadLevel();
             }
             
         }

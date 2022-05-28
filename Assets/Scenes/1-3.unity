@@ -2703,7 +2703,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1266128126574529571, guid: 6313ae4133a028243981be2cf09afd82, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 46.48231
+      value: 46.59
       objectReference: {fileID: 0}
     - target: {fileID: 1266128126574529571, guid: 6313ae4133a028243981be2cf09afd82, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21814,6 +21814,14 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 51b0f0e3b65e3e547997299d4669514a, type: 3}
+    - target: {fileID: 4579117346894013264, guid: 8dd86c4040c7a6e45826b0759f7f7e73, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1146
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579117346894013264, guid: 8dd86c4040c7a6e45826b0759f7f7e73, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20.265
+      objectReference: {fileID: 0}
     - target: {fileID: 4579117346972328273, guid: 8dd86c4040c7a6e45826b0759f7f7e73, type: 3}
       propertyPath: checkpoints.Array.size
       value: 5
