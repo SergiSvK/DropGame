@@ -1,22 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
 
-    public static PauseMenu intance;
+    public static PauseMenu instance;
     public GameObject pauseScreen;
     public bool isPaused;
     public string levelSelect, mainMenu;
     
     void Awake()
     {
-        intance = this;
+        instance = this;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (Input.GetButtonDown("Menu"))

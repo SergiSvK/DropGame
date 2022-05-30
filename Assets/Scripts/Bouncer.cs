@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Bouncer : MonoBehaviour
@@ -19,7 +17,7 @@ public class Bouncer : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            PlayerController.intance.theRb.velocity = new Vector2(PlayerController.intance.theRb.velocity.x, bounceForce);
+            PlayerController.instance.theRb.velocity = new Vector2(PlayerController.instance.theRb.velocity.x, bounceForce);
             _anim.SetTrigger(Bounce);
         }
     }

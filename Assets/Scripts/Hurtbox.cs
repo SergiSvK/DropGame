@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class Hurtbox : MonoBehaviour
@@ -19,7 +16,7 @@ public class Hurtbox : MonoBehaviour
 
             Instantiate(deathEffect,otherTransform.position, otherTransform.rotation);
             
-            PlayerController.intance.Bounce();
+            PlayerController.instance.Bounce();
 
             var dropSelect = Random.Range(0, 100f);
 
@@ -29,7 +26,7 @@ public class Hurtbox : MonoBehaviour
             }
             
             // Enemy Explode.mp3 = 1 position
-            AudioManager.intance.PlaySfx(1);
+            AudioManager.instance.PlaySfx(1);
         }
     }
 }

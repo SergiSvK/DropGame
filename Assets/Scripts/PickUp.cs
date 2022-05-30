@@ -1,19 +1,16 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
     public bool isGem, isHeal;
 
-    private bool isCollected;
+    private bool _isCollected;
 
     public GameObject pickUpEffect;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && !isCollected)
+        if (other.CompareTag("Player") && !_isCollected)
         {
             if (isGem)
             {
@@ -24,9 +21,9 @@ public class PickUp : MonoBehaviour
                 var transform1 = transform;
                 Instantiate(pickUpEffect, transform1.position, transform1.rotation);
                 
-                isCollected = true;
+                _isCollected = true;
                 
-                AudioManager.intance.PlaySfx(9);
+                AudioManager.instance.PlaySfx(9);
                 Destroy(gameObject);
             }
 
@@ -35,8 +32,8 @@ public class PickUp : MonoBehaviour
                 if (PlayerHealthController.instance.currentHealth == PlayerHealthController.instance.maxHealth) return;
                 PlayerHealthController.instance.HealPlayer();
 
-                isCollected = true;
-                AudioManager.intance.PlaySfx(7);
+                _isCollected = true;
+                AudioManager.instance.PlaySfx(7);
                 Destroy(gameObject);
             }
             

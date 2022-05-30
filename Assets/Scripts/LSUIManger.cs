@@ -24,7 +24,8 @@ public class LSUIManger : MonoBehaviour
     {
         if (_shouldFadeToBlack)
         {
-            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
+            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, 
+                Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
             if (fadeScreen.color.a == 1f)
             {
                 _shouldFadeToBlack = false;
@@ -33,7 +34,8 @@ public class LSUIManger : MonoBehaviour
 
         if (_shouldFadeFromBlack)
         {
-            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
+            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, 
+                Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
             if (fadeScreen.color.a == 0f)
             {
                 _shouldFadeFromBlack = false;
@@ -47,7 +49,7 @@ public class LSUIManger : MonoBehaviour
         _shouldFadeFromBlack = false;
     }
 
-    public void FadeFromBlack()
+    private void FadeFromBlack()
     {
         _shouldFadeFromBlack = true;
         _shouldFadeToBlack = false;

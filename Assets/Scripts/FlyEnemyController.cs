@@ -1,8 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
+
 
 public class FlyEnemyController : MonoBehaviour
 {
@@ -36,7 +33,7 @@ public class FlyEnemyController : MonoBehaviour
         }
         else
         {
-            if (Vector2.Distance(transform.position,PlayerController.intance.transform.position) > distanceToAttackPlayer)
+            if (Vector2.Distance(transform.position,PlayerController.instance.transform.position) > distanceToAttackPlayer)
             {
 
                 _attackTarget = Vector2.zero;
@@ -67,7 +64,7 @@ public class FlyEnemyController : MonoBehaviour
             {
                 if (_attackTarget == Vector2.zero)
                 {
-                    _attackTarget = PlayerController.intance.transform.position;
+                    _attackTarget = PlayerController.instance.transform.position;
                 }
                 transform.position = Vector2.MoveTowards(transform.position,_attackTarget, chaseSpeed * 
                     Time.deltaTime);

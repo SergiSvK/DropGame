@@ -5,7 +5,7 @@ public class Switch : MonoBehaviour
 
     public GameObject objectToSwitch;
 
-    private SpriteRenderer theSR;
+    private SpriteRenderer _theSr;
     public Sprite downSprite;
 
     private bool _hasSwitched;
@@ -14,7 +14,7 @@ public class Switch : MonoBehaviour
     
     void Start()
     {
-        theSR = GetComponent<SpriteRenderer>();
+        _theSr = GetComponent<SpriteRenderer>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -23,13 +23,13 @@ public class Switch : MonoBehaviour
         if(deactivateOnSwitch)
         {
             objectToSwitch.SetActive(false);
-            AudioManager.intance.PlaySfx(13);
+            AudioManager.instance.PlaySfx(13);
         } else
         {
             objectToSwitch.SetActive(true);
         }
 
-        theSR.sprite = downSprite;
+        _theSr.sprite = downSprite;
         _hasSwitched = true;
 
 

@@ -1,18 +1,15 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager intance;
+    public static AudioManager instance;
 
     public AudioSource[] soundEffects;
 
     private void Awake()
     {
-        intance = this;
+        instance = this;
     }
 
     public void PlaySfx(int soundToPlay)
