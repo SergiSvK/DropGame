@@ -6,8 +6,7 @@ public class Bouncer : MonoBehaviour
 
     public float bounceForce;
     private static readonly int Bounce = Animator.StringToHash("Bounce");
-
-    // Start is called before the first frame update
+    
     void Start()
     {
         _anim = GetComponent<Animator>();

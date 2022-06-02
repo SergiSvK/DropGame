@@ -25,7 +25,6 @@ public class Hurtbox : MonoBehaviour
                 Instantiate(collectible, otherTransform.position, otherTransform.rotation);
             }
             
-            // Enemy Explode.mp3 = 1 position
             AudioManager.instance.PlaySfx(1);
         }
     }
