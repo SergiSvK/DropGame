@@ -2,7 +2,7 @@
 
 # Gameplay para PC
 
-![](media/f8696be3b987e029ece130a4d158e802.png)
+![](https://i.imgur.com/fkyEBSU.jpeg)
 
 Ilustración 1: Controles del teclado
 
@@ -10,11 +10,11 @@ Ilustración 1: Controles del teclado
 
 En la pantalla principal saldrá unos botones para poder interactuar con el videojuego. Con la mano izquierda se controlará el movimiento y con la mano derecha el salto.
 
-![](media/576422a7f7aea8fd4abae993a09e04dc.png)
+![](https://i.imgur.com/vs25VkZ.jpeg)
 
 # Selector de niveles
 
-![](media/bc50be513b2461b64de3edf751757c15.png)
+![](https://i.imgur.com/JYx3J8W.jpeg)
 
 Elige el nivel al cual quieras viajar, proponte retos y enfréntate a las dificultades del ambiente.
 
@@ -22,9 +22,9 @@ Elige el nivel al cual quieras viajar, proponte retos y enfréntate a las dificu
 
 Enfréntate a diferentes enemigos, todos tienen sus trucos.
 
-![](media/7ee4310584fd79210df1d4bf546e39d2.png)La rana:
+![](https://i.imgur.com/j5iushY.jpeg)La rana:
 
-![](media/6a3e64e69e885b8d6e4b490978bb14e2.png)
+![](https://i.imgur.com/CV7TXog.jpeg)
 
 Ilustración 5: Águila
 
@@ -32,17 +32,18 @@ El Águila puede ser un enemigo muy moral, pero se cansa muy rápido. Aprovecha 
 
 # Vida
 
-![](media/e53c2221e78f605c71b9f8fe840bd2e6.png)Ten cuidado de no quedarte sin vidas o si no serás eliminado, tienes 3 corazones. Por el mapa irás encontrando curaciones para ir recuperando la vida.
+![](https://i.imgur.com/JtV2YjO.jpeg)
+Ten cuidado de no quedarte sin vidas o si no serás eliminado, tienes 3 corazones. Por el mapa irás encontrando curaciones para ir recuperando la vida.
 
 # Entorno
 
 | Nombre                                                                                         | Fin y uso                                                                                                                                                |
 |------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![](media/6c2be40ab402f0e1ee4eadec3cceb16c.png)![](media/9892bbde8ca23b36c4545694d55472a0.png) | Encuentra palancas por el mapa, podrás abrir zonas secretas.                                                                                             |
-| ![](media/78d56674f82ef4ae2626f2b64566e972.png)                                                | Los “Checkpoint” son punto de guardados. Si el “chekpoint” sale en verde significa que está activo y la siguiente vez que mueras aparecerás ahí.         |
-| ![](media/3cc89080ce360382eb034e34d975f1e6.png)                                                | La bandera de final de nivel, indica que has pasado todo el nivel. Y Puedes avanzar hasta la siguiente zona.                                             |
-| ![](media/ba6de099b102d3da8da9d254dfe5fede.png)![](media/25c42994b074076e00a00875f9159a2d.png) | Las “Spikes”, son unos pinchos que, si caes en ellos recibirás.                                                                                          |
-| ![](media/4f4d4233b87b9949820980cfb26502b3.png)                                                | Las plataformas es un método para desplazarse, no todas se mueven. Recuerda que para poder usarlas tienes que caer sobre ellas o si no las traspasarás.  |
+| ![](https://i.imgur.com/Amh3lPN.gif)![](https://i.imgur.com/wCmuQrx.jpeg) | Encuentra palancas por el mapa, podrás abrir zonas secretas.                                                                                             |
+| ![](https://i.imgur.com/2LKQ25S.gif)                                                | Los “Checkpoint” son punto de guardados. Si el “chekpoint” sale en verde significa que está activo y la siguiente vez que mueras aparecerás ahí.         |
+| ![](https://i.imgur.com/5s8Yo7V.jpeg)                                                | La bandera de final de nivel, indica que has pasado todo el nivel. Y Puedes avanzar hasta la siguiente zona.                                             |
+| ![](https://i.imgur.com/f40Wojk.gif)![](https://i.imgur.com/HNKBtsJ.gif) | Las “Spikes”, son unos pinchos que, si caes en ellos recibirás.                                                                                          |
+| ![](https://i.imgur.com/RZIhBE0.gif)                                                | Las plataformas es un método para desplazarse, no todas se mueven. Recuerda que para poder usarlas tienes que caer sobre ellas o si no las traspasarás.  |
 
 Tabla 1: Interacciones con el ambiente
 
